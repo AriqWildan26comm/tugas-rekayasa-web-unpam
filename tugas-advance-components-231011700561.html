@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemesanan Tiket</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2>Form Pemesanan Tiket</h2>
+  <form>
+    <!-- Date Picker -->
+    <div class="mb-3">
+      <label for="tanggal" class="form-label">Tanggal Pemesanan</label>
+      <input type="date" class="form-control" id="tanggal" required>
+    </div>
+
+    <!-- Spinner Input Jumlah Tiket -->
+    <div class="mb-3">
+      <label for="jumlah-tiket" class="form-label">Jumlah Tiket</label>
+      <input type="number" class="form-control" id="jumlah-tiket" min="1" max="10" required>
+    </div>
+
+    <!-- Checkbox Persetujuan -->
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="setuju" required>
+      <label class="form-check-label" for="setuju">Saya setuju dengan syarat dan ketentuan</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Pesan</button>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
